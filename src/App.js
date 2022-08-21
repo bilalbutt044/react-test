@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import { useContext, useEffect } from "react";
+import "./App.css";
+import AddProducts from "./component/AddProduct";
+import Products from "./component/Products";
+import Search from "./component/Search";
+import { ProductsContext } from "./context/ProductContext";
 
 function App() {
+  const { getProducts, loading } = useContext(ProductsContext);
+
+  useEffect(() => {
+    getProducts();
+  }, []);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {loading &&  <div class="lds-dual-ring"></div>}
+      <Search />
+      <AddProducts />
+      <Products />
     </div>
   );
 }

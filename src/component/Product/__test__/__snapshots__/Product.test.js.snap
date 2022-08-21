@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render Product component  without error 1`] = `
+<div
+  style={
+    Object {
+      "border": "1px solid black",
+      "height": "200px",
+      "paddingLeft": "10px",
+      "width": "250px",
+    }
+  }
+>
+  <p>
+     
+    <strong>
+      Name:
+    </strong>
+     
+  </p>
+  <p>
+    <strong>
+      Description:
+    </strong>
+     
+  </p>
+  <p>
+    <strong>
+      Price:
+    </strong>
+  </p>
+  <p>
+    <strong>
+      Date:
+    </strong>
+     
+  </p>
+</div>
+`;

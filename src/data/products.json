@@ -1,0 +1,26 @@
+[
+    {
+        "name":"macbook",
+        "description":"lightinging fast laptop",
+        "price":250,
+        "inventoryDate":"02/04/2021" 
+    },
+    {
+        "name":"hp notebook",
+        "description":"lightinging fast laptop",
+        "price":200,
+        "inventoryDate":"01/08/2021" 
+    },
+    {
+        "name":"dell laptop",
+        "description":"lightinging fast laptop",
+        "price":150,
+        "inventoryDate":"04/03/2022" 
+    },
+    {
+        "name":"lenovo thinkpad",
+        "description":"lightinging fast laptop",
+        "price":300,
+        "inventoryDate":"04/04/2022" 
+    }
+]
